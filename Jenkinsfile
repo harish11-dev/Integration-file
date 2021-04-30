@@ -7,7 +7,9 @@ pipeline {
       }
     }
     stage('sonarcodeanalysis'){
+      steps{
       sh 'sonarscanner'
+      }
     }
   }
 }
