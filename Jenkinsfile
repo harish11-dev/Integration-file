@@ -6,5 +6,8 @@ pipeline {
       sh 'mvn clean install'
       }
     }
+    stage('sonarcodeanalysis'){
+      sh'sonarscanner(arg1,arg2)'
+    }
   }
 }
