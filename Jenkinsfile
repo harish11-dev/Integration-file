@@ -7,7 +7,7 @@ pipeline {
       }
     }
     stage('sonarcodeanalysis'){
-      sh'sonarscanner(arg1,arg2)'
+      sh 'sonarscanner'
     }
   }
 }
